@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Compiler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        *{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Java Compiler</h1>
+    <div id="one">
+    <textarea id="code" rows="10" cols="50"></textarea><br>
+    <button onclick="compile()">Compile</button>
+     </div>
+    <script>
+        function compile() {
+            alert("Compiling: " + document.getElementById("code").value);
+            // Add your Java compilation logic here
+        }
+
+        // Prevent switching windows
+        window.addEventListener("blur", function() {
+            window.focus();
+        });
+    </script>
+</body>
+</html>

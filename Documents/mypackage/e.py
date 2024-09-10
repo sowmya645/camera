@@ -1,0 +1,2 @@
+def fam():
+    print("hi")

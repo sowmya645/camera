@@ -1,0 +1,2 @@
+def jam():
+    print("hello")
